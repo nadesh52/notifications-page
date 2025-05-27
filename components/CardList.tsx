@@ -1,7 +1,6 @@
 import { message } from "@/constants";
 import Image from "next/image";
 import React from "react";
-import { BASE_URL } from "@/constants";
 
 export default function CardList({ isRead }: any) {
   return (
@@ -11,7 +10,7 @@ export default function CardList({ isRead }: any) {
         <div className="flex flex-row gap-[14px]">
           <div>
             <Image
-              src={`${BASE_URL}/assets/images/avatar-mark-webber.webp`}
+              src={`assets/images/avatar-mark-webber.webp`}
               width={90}
               height={90}
               alt="avatar"
@@ -36,7 +35,7 @@ export default function CardList({ isRead }: any) {
         <div className="flex flex-row gap-[14px]">
           <div>
             <Image
-              src={`$/{BASE_URL}/assets/images/avatar-angela-gray.webp`}
+              src={`assets/images/avatar-angela-gray.webp`}
               width={90}
               height={90}
               alt="avatar"
@@ -57,7 +56,7 @@ export default function CardList({ isRead }: any) {
         <div className="flex flex-row gap-[14px]">
           <div>
             <Image
-              src={`/assets/images/avatar-jacob-thompson.webp`}
+              src={`assets/images/avatar-jacob-thompson.webp`}
               width={90}
               height={90}
               alt="avatar"
@@ -82,7 +81,7 @@ export default function CardList({ isRead }: any) {
         <div className="flex flex-row gap-[14px]">
           <div>
             <Image
-              src={`${BASE_URL}/assets/images/avatar-rizky-hasanuddin.webp`}
+              src={`assets/images/avatar-rizky-hasanuddin.webp`}
               width={90}
               height={90}
               alt="avatar"
@@ -106,7 +105,7 @@ export default function CardList({ isRead }: any) {
         <div className="flex flex-row gap-[14px]">
           <div>
             <Image
-              src={`${BASE_URL}/assets/images/avatar-kimberly-smith.webp`}
+              src={`assets/images/avatar-kimberly-smith.webp`}
               width={90}
               height={90}
               alt="avatar"
@@ -122,7 +121,7 @@ export default function CardList({ isRead }: any) {
           </div>
           <div>
             <Image
-              src={"${BASE_URL}/assets/images/image-chess.webp"}
+              src={"assets/images/image-chess.webp"}
               width={90}
               height={90}
               alt="avatar"
@@ -136,7 +135,7 @@ export default function CardList({ isRead }: any) {
         <div className="flex flex-row gap-[14px]">
           <div>
             <Image
-              src={`${BASE_URL}/assets/images/avatar-nathan-peterson.webp`}
+              src={`assets/images/avatar-nathan-peterson.webp`}
               width={90}
               height={90}
               alt="avatar"
@@ -160,7 +159,7 @@ export default function CardList({ isRead }: any) {
         <div className="flex flex-row gap-[14px]">
           <div>
             <Image
-              src={`${BASE_URL}/assets/images/avatar-anna-kim.webp`}
+              src={`assets/images/avatar-anna-kim.webp`}
               width={90}
               height={90}
               alt="avatar"
