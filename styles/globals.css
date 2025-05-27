@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import "tailwindcss";
+
+html {
+  font-family: var(--font-jakarta);
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+@theme {
+  --font-jakarta: "Plus Jakarta Sans", san serif;
+
+  --breakpoint-mobile: 375px;
+  --breakpoint-desktop: 1440px;
+
+  --color-primary-red: oklch(0.6652 0.1992 25.19);
+  --color-primary-blue: oklch(0.3399 0.1322 261.51);
+
+  --color-secondary-100: oklch(0.9834 0.0052 247.88);
+  --color-secondary-200: oklch(0.9488 0.0181 249.82);
+  --color-secondary-300: oklch(0.9223 0.0142 238.58);
+  --color-secondary-400: oklch(0.6932 0.0273 262.94);
+  --color-secondary-500: oklch(0.5131 0.0287 262.86);
+  --color-secondary-600: oklch(0.2454 0.0219 269.18);
+}
+
+@layer components {
+  .badge {
+    @apply bg-primary-blue flex items-center justify-center rounded-md px-[11px] py-[2px] font-medium text-white;
+  }
+
+  .noti {
+    @apply bg-primary-red mx-2 inline-block h-[10px] w-[10px] rounded-full;
+  }
+
+  .avatar {
+    @apply desktop:min-w-[45px] desktop:max-w-[45px] max-w-[39px] min-w-[39px];
+  }
+
+  .card-bg {
+    @apply desktop:px-[18px] desktop:py-[20px] desktop:rounded-lg rounded-md p-4;
+  }
+
+  .card-link {
+    @apply hover:text-primary-blue! cursor-pointer;
+  }
+
+  .card-name {
+    @apply text-secondary-600 hover:text-primary-blue! mr-2 cursor-pointer font-bold;
+  }
+}
